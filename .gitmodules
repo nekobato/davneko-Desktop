@@ -1,0 +1,3 @@
+[submodule "davneko"]
+	path = davneko
+	url = https://github.com/nekobato/davneko
