@@ -4,15 +4,14 @@ const electron = require('electron')
 const BrowserWindow = electron.BrowserWindow
 
 const WINDOW_WIDTH = 320
-const WINDOW_HEIGHT = 640
+const WINDOW_HEIGHT = 680
 
 module.exports = class {
 
   constructor(options) {
 
     var electronScreen = electron.screen
-    var size = electronScreen.getPrimaryDisplay().workAreaSize
-
+    
     this.win = new BrowserWindow({
       width: WINDOW_WIDTH,
       height: WINDOW_HEIGHT,
@@ -20,7 +19,7 @@ module.exports = class {
       resizable: false,
       frame: false,
       transparent: true,
-      'skip-taskbar': true,
+      skipTaskbar: true,
       hasShadow: false
     })
 
@@ -30,7 +29,7 @@ module.exports = class {
       this.win.hide()
     })
 
-    this.win.loadURL('file://' + __dirname + '/davneko/view/player.html')
+    this.win.loadURL('http://dav.nekobato.net')
   }
 
   showWindow(x) {
