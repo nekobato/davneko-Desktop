@@ -21,10 +21,8 @@ app.on('ready', function() {
   tray = new Tray(trayIcon)
 
   tray.on('click', function(event, bounds) {
-    controller.toggle(bounds.x)
+    player.toggle(bounds.x)
   })
-
-  player.show()
 })
 
 app.on('will-quit', function() {

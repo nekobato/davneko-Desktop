@@ -1,0 +1,30 @@
+{
+  "name": "davneko-Desktop",
+  "version": "0.0.1",
+  "description": "davneko on Mac",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "gulp release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekobato/davneko-Desktop.git"
+  },
+  "keywords": [],
+  "author": "nekobato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nekobato/davneko-Desktop/issues"
+  },
+  "homepage": "https://github.com/nekobato/davneko-Desktop#readme",
+  "dependencies": {
+    "electron-packager": "^6.0.0",
+    "electron-prebuilt": "^0.37.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-dev": "^0.3.0"
+  }
+}
