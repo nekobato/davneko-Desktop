@@ -13,6 +13,8 @@ const PlayerWindow = require('./player')
 
 var tray, trayIcon, player
 
+app.dock.hide();
+
 app.on('ready', function() {
 
   player = new PlayerWindow()
