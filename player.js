@@ -3,15 +3,15 @@
 const electron = require('electron')
 const BrowserWindow = electron.BrowserWindow
 
-const WINDOW_WIDTH = 320
-const WINDOW_HEIGHT = 680
+const WINDOW_WIDTH = 440
+const WINDOW_HEIGHT = 540
 
 module.exports = class {
 
-  constructor(options) {
+  constructor(options = {}) {
 
     var electronScreen = electron.screen
-    
+
     this.win = new BrowserWindow({
       width: WINDOW_WIDTH,
       height: WINDOW_HEIGHT,
@@ -29,7 +29,7 @@ module.exports = class {
       this.win.hide()
     })
 
-    this.win.loadURL('http://dav.nekobato.net')
+    this.win.loadURL('file://' + __dirname + '/player.html')
   }
 
   showWindow(x) {

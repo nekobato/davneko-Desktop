@@ -30,3 +30,7 @@ app.on('ready', function() {
 app.on('will-quit', function() {
   globalShortcut.unregisterAll()
 })
+
+ipcMain.on('close', (event) => {
+  app.quit()
+});
