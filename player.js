@@ -8,7 +8,7 @@ const WINDOW_HEIGHT = 540
 
 module.exports = class {
 
-  constructor(options = {}) {
+  constructor(options) {
 
     this.win = new BrowserWindow({
       width:       WINDOW_WIDTH,
