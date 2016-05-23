@@ -10,17 +10,15 @@ module.exports = class {
 
   constructor(options = {}) {
 
-    var electronScreen = electron.screen
-
     this.win = new BrowserWindow({
-      width: WINDOW_WIDTH,
-      height: WINDOW_HEIGHT,
-      show: false,
-      resizable: false,
-      frame: false,
+      width:       WINDOW_WIDTH,
+      height:      WINDOW_HEIGHT,
+      show:        false,
+      resizable:   false,
+      frame:       false,
       transparent: true,
       skipTaskbar: true,
-      hasShadow: false
+      hasShadow:   false
     })
 
     this.win.setVisibleOnAllWorkspaces(true)
@@ -33,7 +31,7 @@ module.exports = class {
   }
 
   showWindow(x) {
-    this.win.setPosition(x - WINDOW_WIDTH/2, 0)
+    this.win.setPosition(x - WINDOW_WIDTH/2, 40)
     this.win.show()
     this.win.focus()
   }
@@ -41,7 +39,7 @@ module.exports = class {
   toggle(x) {
     if (this.win.isVisible()) {
       this.win.hide()
-    }else {
+    } else {
       this.showWindow(x)
     }
   }

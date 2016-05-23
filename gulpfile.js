@@ -16,7 +16,7 @@ const buildOption = {
   asar: true,
   prune: true,
   overwrite: true,
-  //icon: './appicon',
+  icon: './davneko',
   out: './release'
 }
 
