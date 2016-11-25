@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "gulp release"
+    "release": "node ./build.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/nekobato/davneko-Desktop#readme",
   "dependencies": {
-    "electron-packager": "^7.0.2",
+    "electron-packager": "^8.3.0",
     "electron-prebuilt": "^1.1.1"
   },
   "devDependencies": {
